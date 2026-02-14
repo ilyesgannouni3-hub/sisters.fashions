@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sisters Fashion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+        <header class="site-header">
+            <h1 class="logo">
+                <span class="s-bleu">s</span>ister f<span class="a-yellow">a</span>shion
+            </h1>
+            
+            <!-- Tadil: zedna flex-wrap bch l-ktiba matodkholch f tswira f tlifoun -->
+            <div class="welcome-wrapper" style="display: flex; align-items: center; justify-content: space-between; width: 100%; max-width: 900px; flex-wrap: wrap; margin: 0 auto;">
+                
+                <div class="welcome" style="flex: 1; min-width: 280px; padding: 10px;">
+                    <p>Hello! We are excited to have you here.</p>
+                    <p>Our website offers brand new, high-quality clothing for everyone (kids, teens, and adults).</p>
+                    <p>We hope you enjoy our collection and services. Thank you for visiting!</p>
+                </div>
+
+                <div class="welcome-image" style="flex: 1; min-width: 280px; display: flex; justify-content: center;">
+                    <img src="site/—Pngtree—a red gown on mannequin_18129381 - Copie.png" alt="Welcome Image" style="max-width: 100%; height: auto;">
+                </div>
+            </div> <!-- fin welcome-wrapper -->
+        </header>
+    </div>
+
+    <div class="collection-row">
+        <!-- 1. El Social Links -->
+        <div class="social-links-container">
+            <a href="https://www.tiktok.com/@dorsaf.bouzidi2?_r=1&_t=ZS-93eCe8YHqND" target="_blank" class="social-row">
+                <img src="https://marketplace.canva.com/NNt2s/MAGzNtNNt2s/1/tl/canva-tik-tok-logo-MAGzNtNNt2s.png" alt="TikTok">
+                <span>TikTok</span>
+            </a>
+            <a href="https://www.instagram.com/sisters_fashion_ssdd_?utm_source=qr&igsh=NTU5YmswNzdrcjVn" target="_blank" class="social-row">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/500px-Instagram_icon.png" alt="Instagram">
+                <span>Instagram</span>
+            </a>
+            <a href="https://wa.me" target="_blank" class="social-row">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/960px-WhatsApp.svg.png" alt="WhatsApp">
+                <span>WhatsApp</span>
+            </a>
+        </div>
+
+        <!-- 2. Women -->
+        <div class="card-inline">
+            <a href="#" id="women-link" onclick="loadwomen(event)">
+                <img src="https://cdn.shopify.com/s/files/1/0095/7602/2078/files/ban2_600x600.jpg?v=1618478010" alt="women" class="card-img">
+                <p class="card-title-inline">Women</p>
+            </a>
+        </div>
+
+        <!-- 3. Man -->
+        <div class="card-inline">
+            <a href="#" onclick="loadman(event)">
+                <img src="https://www.fashionbeans.com/wp-content/uploads/2024/04/lestrangelondon_manincasualoutfitsittinginfrontofadoorway.jpg" alt="man" class="card-img">
+                <p class="card-title-inline">Man</p>
+            </a>
+        </div>
+
+        <!-- 4. Kids -->
+        <div class="card-inline">
+            <a href="#" onclick="loadkids(event)">
+                <img src="https://www.shutterstock.com/image-photo/fashion-concept-stylish-children-on-600nw-2453400939.jpg" alt="kids" class="card-img">
+                <p class="card-title-inline">Kids</p>
+            </a>
+        </div>
+    </div>
+
+    <!-- Div lel gallerie dynamiq -->
+    <div id="gallery-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

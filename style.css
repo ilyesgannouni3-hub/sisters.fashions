@@ -1,0 +1,374 @@
+/* 1. Global & Header */
+.site-header {
+    padding-top: 80px; 
+    padding-left: 30px;
+}
+
+.logo {
+    font-family: 'Indie Flower', cursive;
+    font-size: 75px;
+    font-weight: bold;
+    text-align: left;
+    margin: 0;
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-transform: capitalize;
+    text-shadow: 0 0 15px rgba(212, 175, 55, 0.4), 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.s-bleu, .a-yellow {
+    color: #d4af37; /* Gold */
+    font-size: 1.1em;
+}
+
+
+/* 2. Welcome Section */
+.welcome {
+    margin-top: 50px;
+    padding: 25px;
+    border-left: 4px solid #d4af37;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(8px);
+    border-radius: 0 20px 20px 0;
+    max-width: 600px;
+}
+
+.welcome h2 {
+    font-size: 1px;
+    color: #d4af37;
+    font-family: 'Indie Flower', cursive;
+    margin-bottom: 15px;
+}
+
+.welcome p {
+    font-size: 20px;
+    color: #e0e0e0;
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+.btn-shop {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 35px;
+    background: transparent;
+    color: #d4af37;
+    border: 2px solid #d4af37;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: 0.4s ease;
+}
+
+.btn-shop:hover {
+    background: #d4af37;
+    color: #000;
+    box-shadow: 0 0 25px rgba(212, 175, 55, 0.5);
+}
+
+/* 3. Hero Section - Houna el hbout mta el taswira */
+.hero {
+    width: 100%;
+    height: 110vh; 
+    background-image: url("site/7d5c09b8-a05c-427a-bed7-4b8b2caf6f1c.jpg");
+    background-size: cover;
+    /* center 30% hya elli t'habbat el taswira louta */
+    background-position: center 30%; 
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 4. Collection Row & Social Links */
+.collection-row {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 60px 20px;
+    background-color: #000; 
+    flex-wrap: wrap;
+}
+
+.social-links-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    min-width: 180px;
+}
+
+.social-row {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color:block; 
+    gap: 12px;
+    transition: 0.3s;
+}
+
+.social-row:hover {
+    transform: translateX(10px);
+    color: #d4af37;
+}
+
+.social-row img {
+    width: 32px;
+    height: 32px;
+    filter: drop-shadow(0 0 5px rgba(212, 175, 55, 0.3));
+}
+
+/* 5. Product Cards */
+.card-inline {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #fff; 
+}
+.inner-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    margin-top: 15px;
+}
+.product-img{
+     width: 100%;
+    height: 120px; /* Toul el taswira (sghira bech hez barcha) */
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #222;
+}
+
+.card-img {
+    width: 250px;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    transition: 0.4s;
+}
+
+.card-inline:hover .card-img {
+    transform: scale(1.03);
+    border-color: #d4af37;
+}
+
+.card-title-inline {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+    letter-spacing: 1px;
+    color: white;
+}
+
+
+
+/* 1. Global Page Style lél l-koll */
+/* 1. Page Backgrounds */
+/* 1. Zid .kids-page houni */
+.women-page, .man-page, .kids-page, .product-page { 
+    padding: 40px 20px; 
+    font-family: sans-serif; 
+    background: #fafafa; 
+    min-height: 100vh;
+text-align: center;
+}
+
+/* 2. Zid .kids-grid houni */
+.women-grid, .man-grid, .kids-grid, .product-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* 3. Product Card - t7arek lel koll donc toq3od kima hya */
+.product-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    text-align: center;
+    border: 1px solid #eee;
+    transition: 0.3s;
+}
+
+/* 4. Zid .kids-img houni */
+.image-frame {
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.women-img, .man-img, .kids-img, .product-img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: contain; 
+}
+
+
+/* 5. El-Faza el-jdida: Order Section (Input + Button) */
+.order-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.phone-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    text-align: center;
+}
+
+.phone-input:focus {
+    border-color: #25D366;
+}
+
+.request-btn {
+    background-color: #25D366;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.request-btn:hover {
+    background-color: #1ebe57;
+    transform: scale(1.02);
+}
+
+.request-btn:hover { background-color: #128C7E; }
+
+.back-btn { margin-bottom: 20px; cursor: pointer; padding: 10px; }
+
+/* Animations */
+@keyframes fadeInTitle {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.welcome-image {
+  position: absolute;   /* تبقى ديما في الفوق */
+  top: 450px;         /* المسافة من فوق */
+  right: 15px;        /* المسافة من اليسار */
+  z-index: 1000;     /* تطلع فوق العناصر الكل */
+}
+
+.welcome-image img {
+  width: 300px;       /* صغيّرها كيما تحب */
+  height: auto;
+
+}
+
+
+/* 1. Nsol7ou el-Welcome Section (Ktiba vs Taswira) */
+.welcome-wrapper {
+    display: flex;
+    flex-wrap: wrap; /* Behy tkhallihom yahbtou ta7t ba3dhom */
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+
+/* 2. Nsol7ou el-Social Links (TikTok, Insta...) */
+.social-links-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px; /* Nab3douhom 3al collections */
+    width: 100%;
+}
+
+.social-row {
+    display: flex;
+    align-items: center;
+    background: #eee;
+    padding: 8px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+/* 3. El-Faza l-kbira lel Talifoun (Media Query) */
+@media screen and (max-width: 768px) {
+    /* El-Collections iwalliw ka3ba ta7t ka3ba */
+    .collection-row {
+        display: flex;
+        flex-direction: column !important; 
+        align-items: center;
+        gap: 30px;
+    }
+
+    .card-inline {
+        width: 90% !important; /* El-taswira tekhou 3ardh el-talifoun */
+        margin: 0 auto;
+    }
+
+    .welcome {
+        padding: 10px;
+        font-size: 0.9rem; /* Nsaghrou el-ktiba chwaya bch tekfi */
+    }
+
+    .welcome-image img {
+        width: 200px; /* Nsaghrou el-mannequin bch matakolch el-blasa */
+        height: auto;
+    }
+
+    .logo {
+        font-size: 1.8rem;
+        letter-spacing: 2px;
+    }
+}
+
+
+
+
+
+/* El s7aba el k7ala */
+.zoom-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* El taswira: cursor default bech mat-tebdalech */
+.zoom-img-fixed {
+    max-width: 90%;
+    max-height: 80%;
+    border: 5px solid white;
+    border-radius: 10px;
+    cursor: default !important; /* Houni el mouse mat-tebdalech */
+}
+
+/* El button Flash Back el fou9 3al lisar */
+.flash-back-top-left {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background: #ff4757;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    z-index: 10001;
+}
